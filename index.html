@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Server Time</title>
+  <script>
+    async function fetchTime() {
+      try {
+        const response = await fetch("http://172.20.10.4:5000/time");
+        const text = await response.text();
+        document.getElementById("time").innerText = text;
+      } catch (error) {
+        document.getElementById("time").innerText = "Error fetching time";
+      }
+    }
+
+    window.onload = fetchTime; // Fetch on initial load
+  </script>
+</head>
+<body>
+  <h1>Current Server Time</h1>
+  <p id="time">Loading...</p>
+  <button onclick="fetchTime()">Refresh Time</button>
+</body>
+</html>
