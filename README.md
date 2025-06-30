@@ -166,12 +166,26 @@ Let the discovery to run for while (until you get the required information) and 
 > 1. sudo systemctl stop aws-discovery-daemon.service
 > 2. udo systemctl disable aws-discovery-daemon.service
 
-Go to Server section in migration hub and check the discovered data.
+Go to Server section in migration hub and check the discovered data and download it if need .
 
 <img src="./images/image-11.png" alt="IAM Permissions for Discovery Agent" width="800">
 
+Go to network section and check the connections between front-end and back-end
 
->Pending....
+<img src="./images/image-12.png" alt="IAM Permissions for Discovery Agent" width="800">
+
+To create the assessment : Move to Migration-Hub --> Assess --> 
+EC2 instance recommendations and fill all the required specifications you need and export the assessment.
+
+
+<img src="./images/image-13.png" alt="IAM Permissions for Discovery Agent" width="800">
+
+Finally we got our recommended instance.
+<img src="./images/image-14.png" alt="IAM Permissions for Discovery Agent" width="800">
+
+
+
+
 
 <h1 style="text-align: center;">நன்றி வணக்கம் 🙏</h1>
 
